@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Tahoma, Verdana;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left-side {
+    position: relative;
+    background-color: rgb(7, 7, 37);
+    padding: 40px;
+    
+}
+
+.profiletxt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.profiletxt .image-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletxt .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletxt h2 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+}
+
+.profiletxt h2 span {
+    font-size: 20px;
+    font-weight: 300;
+    color: pink;
+}
+
+.contactinfo {
+    padding-top: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+
+.title {
+    color: pink;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactinfo ul {
+    position: relative;
+}
+
+.contactinfo ul li {
+    position: relative;
+    margin: 10px 0;
+    color: black;
+    font-size: 20px;
+    list-style: none;
+}
+
+.contactinfo ul li .identification {
+    display: inline-block;
+    font-size: 20px;
+    color: pink;
+}
+
+.contactinfo ul li span {
+    font-size: 20px;
+    color: white;
+    
+}
+
+.contactinfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactinfo.education h5 {
+    color: pink;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contactinfo.education h4 {
+    color: white;
+    font-weight: 500;
+}
+.container .right-side {
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+    text-align: justify;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.title2 {
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.about ul li {
+    letter-spacing: 2px;
+    padding: 5px;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+p{
+    padding: 5px;
+    color: darkcyan;
+    font-size: 20px;
+}
+
